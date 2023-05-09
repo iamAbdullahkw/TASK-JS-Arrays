@@ -10,7 +10,19 @@
  */
 function isArrayLengthOdd(numbers) {
   // Your code here
+  
+  if (numbers %2 ==1) {
+    return (true);
+  
+  }
+
+  else 
+  return (false);
+
 }
+
+const odd = [1, 2, 7, 9]
+console.log (isArrayLengthOdd(odd.length))
 
 /**
  * isArrayLengthEven(numbers):
@@ -24,7 +36,22 @@ function isArrayLengthOdd(numbers) {
  */
 function isArrayLengthEven(numbers) {
   // Your code here
+
+
+
+if (numbers %2 ==0) {
+  return (true);
+
 }
+
+else 
+return (false);
+
+}
+
+const even = [3, 4, 5, 8] 
+console.log (isArrayLengthEven(even.length)) 
+
 
 /**
  * addLailaToArray(instructors):
@@ -36,7 +63,14 @@ function isArrayLengthEven(numbers) {
  */
 function addLailaToArray(instructors) {
   // Your code here
+
+ instructors.push('Laila')
+return (instructors)
+
 }
+
+console.log(addLailaToArray(["Mshary", "Hasan"]))
+
 
 /**
  * eliminateTeam(teams):
@@ -48,7 +82,12 @@ function addLailaToArray(instructors) {
  */
 function eliminateTeam(teams) {
   // Your code here
+
+  teams.pop('Italy')
+  return (teams)
 }
+console.log (eliminateTeam(["Brazil", "Germany", "Italy"]))
+
 
 /**
  * secondHalfOfArrayIfItIsEven(fruits):
@@ -62,7 +101,13 @@ function eliminateTeam(teams) {
  */
 function secondHalfOfArrayIfItIsEven(fruits) {
   // Your code here
+  const halfOfArare = fruits.slice(fruits.length / 2) 
+  return halfOfArare;
 }
+
+
+console.log (secondHalfOfArrayIfItIsEven (["apple", "orange", "banana", "kiwi"]))
+
 
 /**
  * youGottaCalmDown(shout):
@@ -78,6 +123,6 @@ function secondHalfOfArrayIfItIsEven(fruits) {
  * - Use number method .indexOf()
  * - Use string method .slice()
  */
-function youGottaCalmDown(shout) {
+//function youGottaCalmDown(shout) {
   // Your code here
-}
+//}
