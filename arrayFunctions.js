@@ -123,6 +123,15 @@ console.log (secondHalfOfArrayIfItIsEven (["apple", "orange", "banana", "kiwi"])
  * - Use number method .indexOf()
  * - Use string method .slice()
  */
-//function youGottaCalmDown(shout) {
-  // Your code here
-//}
+function youGottaCalmDown(shout) {
+ // Your code here
+
+ const focus = shout.indexOf("!");
+ if(focus === -1) return shout;
+ return shout.slice(0,focus+1) ;
+ 
+
+}
+console.log (youGottaCalmDown("HI!!!!!!!!!!") )
+console.log (youGottaCalmDown("Taylor Schwifting!!!!!!!!!!!") )
+console.log (youGottaCalmDown("Hellooooo") )
